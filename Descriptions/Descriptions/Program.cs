@@ -89,13 +89,6 @@ namespace Descriptions
             }
         }
 
-        static void CreateXmlFile(string filePath, string text)
-        {
-            XElement xml = new XElement("Document", new XElement("Text", text));
-
-            xml.Save(filePath);
-        }
-
         static string[] CheckFilesInside(string folder)
         {
             if (Directory.Exists(folder))
